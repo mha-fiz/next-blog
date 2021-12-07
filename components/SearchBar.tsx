@@ -1,10 +1,16 @@
 import { useState, useEffect } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { SearchResults } from './SearchResult';
+import { FrontMatterProps } from '@/types/index';
+
+type ResultProps = {
+  frontMatter: FrontMatterProps;
+  slug?: string;
+};
 
 export const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [searchResult, setSearchResult] = useState([]);
+  const [searchResult, setSearchResult] = useState<ResultProps[]>([]);
 
   useEffect(() => {
     const getResults = async () => {

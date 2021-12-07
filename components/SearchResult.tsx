@@ -1,4 +1,4 @@
-import { FrontMatterProps } from '../types/index';
+import { FrontMatterProps } from '@/types/index';
 import { CardPost } from './CardPost';
 
 type ResultProps = {
