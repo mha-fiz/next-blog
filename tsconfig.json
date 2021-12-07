@@ -22,6 +22,6 @@
     "incremental": true,
     "suppressImplicitAnyIndexErrors": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "script/data.js"],
   "exclude": ["node_modules"]
 }
